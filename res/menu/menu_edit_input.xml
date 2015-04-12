@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:id="@+id/menu_edit_scale" android:title="Scale" android:showAsAction="always|withText">
+        <menu>
+			<item android:id="@+id/menu_edit_scale_splus" android:title="Stick+" android:showAsAction="withText"></item>
+    		<item android:id="@+id/menu_edit_scale_sminus" android:title="Stick-" android:showAsAction="withText"></item>
+			<item android:id="@+id/menu_edit_scale_bplus" android:title="Buttons+" android:showAsAction="withText"></item>
+			<item android:id="@+id/menu_edit_scale_bminus" android:title="Buttons-" android:showAsAction="withText"></item> 
+        </menu>
+    </item>
+    
+    <item android:id="@+id/menu_edit_alpha" android:title="Alpha" android:showAsAction="always|withText">
+        <menu>
+            <item android:id="@+id/menu_edit_alpha_plus" android:title="Alpha+" android:showAsAction="withText"></item>
+			<item android:id="@+id/menu_edit_alpha_minus" android:title="Alpha-" android:showAsAction="withText"></item>
+        </menu>
+    </item>
+    
+    <item android:id="@+id/menu_edit_cancel" android:title="Cancel" android:showAsAction="always|withText"></item>
+    
+</menu>

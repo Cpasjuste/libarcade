@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:afba="http://schemas.android.com/apk/res-auto">
+	
+	<item android:id="@+id/menu_play"
+          android:icon="@drawable/play"
+          android:title="Play"
+          afba:showAsAction="always" 
+	/>
+	<item android:id="@+id/menu_browser"
+	    android:icon="@drawable/ic_action_search"
+	     android:title="Browse"
+	     afba:showAsAction="always" 
+		android:visible="false"></item>
+</menu>

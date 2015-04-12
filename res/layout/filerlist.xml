@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:baselineAligned="true" 
+    android:orientation="horizontal"
+    android:padding="5dip" >
+    
+    <ImageView
+        android:id="@+id/file_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="8dip"
+        android:adjustViewBounds="true"
+        android:maxHeight="32dp"
+        android:maxWidth="32dp"
+        android:src="@drawable/noicon" />
+        
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="1" 
+        android:layout_height="wrap_content" 
+        android:orientation="vertical">
+        
+        <TextView
+            android:id="@+id/file_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Awsome Rom!"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold" />
+        
+        <TextView
+        	android:id="@+id/file_info"
+            android:layout_width="fill_parent"
+            android:layout_weight="1" 
+            android:layout_height="wrap_content"
+            android:text="This is an Awsome Rom, blah blah blah"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+         />
+            
+    </LinearLayout>
+</LinearLayout>

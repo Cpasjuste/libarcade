@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detailview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android1:gravity="center_horizontal" >
+
+    <LinearLayout
+        android1:layout_width="fill_parent"
+        android1:layout_height="fill_parent"
+        android1:layout_alignParentBottom="true"
+        android1:layout_alignParentTop="true"
+        android1:orientation="vertical" >
+
+        <TextView
+            android1:id="@+id/title"
+            android1:layout_width="fill_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_margin="8dp"
+            android1:background="@drawable/custom_bg_1"
+            android1:gravity="center"
+            android1:text="Svc Chaos"
+            android1:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android1:layout_width="wrap_content"
+            android1:layout_height="0dp"
+            android1:layout_gravity="center_horizontal"
+            android1:layout_weight="4"
+            android1:orientation="vertical" >
+
+            <ImageView
+                android1:id="@+id/rom_screenshot_image"
+                android1:layout_width="wrap_content"
+                android1:layout_height="0dp"
+                android1:layout_gravity="center_horizontal"
+                android1:layout_marginBottom="8dp"
+                android1:layout_marginLeft="8dp"
+                android1:layout_marginRight="8dp"
+                android1:layout_weight="1"
+                android1:adjustViewBounds="true"
+                android1:background="@drawable/custom_bg_1"
+                android1:src="@drawable/no_screenshot" />
+
+            <ImageView
+                android1:id="@+id/rom_title_image"
+                android1:layout_width="wrap_content"
+                android1:layout_height="0dp"
+                android1:layout_weight="1"
+                android1:layout_gravity="center_horizontal"
+                android1:layout_marginLeft="8dp"
+                android1:layout_marginRight="8dp"
+                android1:adjustViewBounds="true"
+                android1:background="@drawable/custom_bg_2"
+                android1:src="@drawable/no_screenshot" />
+        </LinearLayout>
+
+        
+        <!-- xmlns:android1="http://schemas.android.com/apk/res/android" -->
+        <LinearLayout
+            android1:id="@+id/romDetails"
+            android1:layout_width="match_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_marginLeft="8dp"
+            android1:layout_marginRight="8dp"
+            android1:layout_marginTop="8dp"
+            android1:background="@drawable/custom_bg_2"
+            android1:gravity="center_horizontal"
+            android1:orientation="vertical" >
+
+            <TextView
+                android1:id="@+id/romYearView"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:text="1995" />
+
+            <TextView
+                android1:id="@+id/romSystemView"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:text="NeoGeo" />
+
+            <TextView
+                android1:id="@+id/romFilenameView"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:text="@string/romfilename" />
+
+            <TextView
+                android1:id="@+id/romParentView"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:text="parentrom" />
+        </LinearLayout>
+
+        <ScrollView
+            android1:id="@+id/romDescription"
+            android1:layout_width="fill_parent"
+            android1:layout_height="0dp"
+            android1:layout_marginBottom="8dp"
+            android1:layout_marginLeft="8dp"
+            android1:layout_marginRight="8dp"
+            android1:layout_marginTop="8dp"
+            android1:layout_weight="1"
+            android1:background="@drawable/custom_bg_1" >
+
+            <TextView
+                android1:id="@+id/romDescriptionView"
+                android1:layout_width="match_parent"
+                android1:layout_height="wrap_content"
+                android1:layout_marginBottom="8dp"
+                android1:gravity="center_horizontal"
+                android1:text="No description available for this game !"
+                android1:textAppearance="?android:attr/textAppearanceSmall" />
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

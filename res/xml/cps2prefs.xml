@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <PreferenceCategory android:key="catcpsemu" android:title="Emulation">
+        
+		<ListPreference 
+	    	android:defaultValue="22050"
+			android:title="samplerate" 
+			android:key="samplerate" 
+			android:summary="Set the sound sample rate" 
+			android:entries="@array/samplerate" 
+	 		android:entryValues="@array/samplerate" 
+	 	/>
+		
+		<CheckBoxPreference 
+	   		android:summary="Enable automatic frame's skipping" 
+	    	android:key="autoframeskip"
+	    	android:defaultValue="false" 
+	    	android:title="Auto Frameskip" 
+	    />
+		
+    </PreferenceCategory>
+    <PreferenceCategory android:key="previews" android:title="Previews">
+        <Preference android:key="previewsdownload" android:title="Download previews" android:summary="Download rom's screenshot"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

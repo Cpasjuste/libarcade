@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+    				android:key="prefscreen">
+    
+<PreferenceCategory android:title="Emulator" android:key="prefcatemu">
+
+	<CheckBoxPreference 
+    	android:defaultValue="false" 
+    	android:summary="Enable arm specific cores, can improve performance but lower compatibility" 
+    	android:key="useasm" 
+    	android:title="Use ASM Cores"/>
+	
+	<ListPreference 
+	    android:title="country" 
+	    android:key="country" 
+	    android:summary="Set the country to japan, asia, usa or europe" 
+	    android:entries="@array/country"
+	    android:entryValues="@array/country"
+	    android:defaultValue="europe" />
+	
+	<ListPreference 
+	    android:title="system" 
+	    android:key="system" 
+	    android:summary='Set the system to home, arcade or unibios. If uni-bios is enabled, you have to copy "uni-bios.rom" in your rom directory.' 
+	    android:defaultValue="arcade" 
+	    android:entries="@array/system" 
+	    android:entryValues="@array/system" />
+	
+	<CheckBoxPreference 
+	    android:summary="Enable sound" 
+	    android:key="sound" 
+	    android:defaultValue="true" 
+	    android:title="sound" />
+	
+	<ListPreference 
+	    android:defaultValue="22050" 
+	    android:title="samplerate" 
+	    android:key="samplerate" 
+	    android:summary="Set the sound sample rate" 
+	    android:entries="@array/samplerate" 
+	    android:entryValues="@array/samplerate" />
+	
+	<CheckBoxPreference android:summary="Merge the last frame and the current"
+	     android:key="interpolation"
+	      android:defaultValue="false" 
+	      android:title="interpolation" />
+	
+	<CheckBoxPreference android:key="raster" 
+	    android:defaultValue="false" 
+	    android:title="raster" 
+	    android:summary="Enable the raster interrupt" />
+	
+	<CheckBoxPreference 
+	    android:summary="Show FPS at startup" 
+	    android:key="showfps" 
+	    android:defaultValue="false" 
+	    android:title="showfps" />
+	
+	<CheckBoxPreference 
+	    android:summary="Sleep when idle" 
+	    android:key="sleepidle" 
+	    android:defaultValue="false" 
+	    android:title="sleepidle" />
+	
+	<CheckBoxPreference 
+	    android:summary="Enable auto frameskip. This is needed to limit frames per secondes." 
+	    android:key="autoframeskip" 
+	    android:defaultValue="true" 
+	    android:title="autoframeskip" />
+	
+	<CheckBoxPreference 
+	    android:summary="Force the PC to a correct value at startup" 
+	    android:key="forcepc" 
+	    android:defaultValue="false" 
+	    android:title="forcepc" />
+
+	<fr.mydedibox.utility.SeekBarPreference
+        android:key="z80clock"
+	    android:title="z80 Clock"
+	    android:summary="Overclock the Z80 by x%"
+	    android:persistent="true"
+	    android:defaultValue="0"
+	    />
+	<fr.mydedibox.utility.SeekBarPreference
+        android:key="68kclock"
+	    android:title="68k Clock"
+	    android:summary="Overclock the 68k by x%"
+	    android:persistent="true"
+	    android:defaultValue="0"
+	    />
+
+</PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,3 @@
+<resources>
+    <item type="layout" name="activity_rom_list">@layout/activity_rom_twopane</item>
+</resources>

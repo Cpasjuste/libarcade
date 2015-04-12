@@ -1,0 +1,7 @@
+<resources>
+    <string name="romyear">Year:</string>
+    <string name="romsystem">System:</string>
+    <string name="romparent">Parent:</string>
+    <string name="rommanufacturer">Manufacturer:</string>
+    <string name="romfilename">Filename</string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="country">
+        <item >europe</item>
+        <item >japan</item>
+        <item >asia</item>
+        <item >usa</item>
+    </string-array>
+    <string-array name="system">
+        <item >arcade</item>
+        <item >home</item>
+        <item >unibios</item>
+    </string-array>
+    <string-array name="effect">
+		<item >none</item>
+        <item >scanline</item>
+        <item >scanline50</item>
+        <item >scale2x</item>
+        <item >scale3x</item>
+        <item >scale4x</item>
+        <item >scale2x50</item>
+        <item >scale2x75</item>
+        <item >hq2x</item>
+        <item >hq3x</item>
+        <item >lq2x</item>
+        <item >lq3x</item>
+        <item >doublex</item>
+    </string-array>
+    <string-array name="scale">
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+        <item >4</item>
+    </string-array>
+    <string-array name="samplerate">
+        <item >11025</item>
+        <item >22050</item>
+        <item >44100</item>
+    </string-array>
+    <string-array name="controllerarray">
+        <item >analog</item>
+        <item >digital</item>
+    </string-array>
+</resources>

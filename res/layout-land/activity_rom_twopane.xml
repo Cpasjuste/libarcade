@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ 	android:orientation="vertical">
+	
+	<LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:divider="?android:attr/dividerHorizontal"
+	    android:showDividers="middle"
+	    tools:context=".activity.romListActivity">
+	
+	    <FrameLayout
+	        android:id="@+id/rom_detail_container"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="3" >
+	    </FrameLayout>
+	
+	    <fragment
+	        android:id="@+id/rom_list"
+	        android:name="fr.mydedibox.libarcade.fragments.romListFragment"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1.5" />
+	
+	</LinearLayout>
+	
+</LinearLayout>

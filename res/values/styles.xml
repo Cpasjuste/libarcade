@@ -1,0 +1,11 @@
+<resources>
+	<style name="aFBATheme" parent="Theme.AppCompat.Light">
+    </style>
+    
+	<style name="aFBAThemeOverlayAB" parent="Theme.AppCompat.Light">
+        <!-- <item name="android:windowActionBarOverlay">true</item> -->
+        <!-- Support library compatibility -->
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+</resources>

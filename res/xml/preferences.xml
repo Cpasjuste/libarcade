@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+    				xmlns:example="http://schemas.android.com/apk/res/fr.mydedibox.neodroid"
+    				android:key="prefscreen">
+    
+    <PreferenceCategory 
+        android:title="Controls"
+        android:key="categorycontrols">
+        
+	<Preference android:title="Customize 2 buttons OSD" android:key="customizeosd2"/><Preference android:key="customizeosd3" android:title="Customize 3 buttons OSD"/><Preference android:key="customizeosd4" android:title="Customize 4 buttons OSD"/><Preference android:key="customizeosd6" android:title="Customize 6 buttons OSD"/><CheckBoxPreference 
+	    android:title="Vibrate on touch" 
+	    android:key="vibrations" 
+	    android:defaultValue="1" 
+	    android:summary="Enable vibrations"/>
+	
+	<CheckBoxPreference 
+	    android:title="Use hardware buttons" 
+	    android:key="usehardware" 
+	    android:summary="Check this to use hardware buttons" 
+	    android:defaultValue="false" />
+	<Preference android:summary="Click here to define hardware buttons mapping" android:key="map_hardware_key" android:title="Set hardware buttons" android:dependency="usehardware"/>
+	
+	
+	
+	
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

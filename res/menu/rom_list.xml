@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:afba="http://schemas.android.com/apk/res-auto">
+    
+    <item android:id="@+id/menu_search"
+          android:icon="@drawable/ic_menu_find_holo_light"
+          android:title="Search"
+          afba:showAsAction="ifRoom|collapseActionView"
+          afba:actionViewClass="android.support.v7.widget.SearchView"
+          />
+    
+    <item android:id="@+id/menu_clones"
+          android:icon="@drawable/clones_on"
+          android:title="Clones"
+          afba:showAsAction="ifRoom|withText"
+     />
+     
+    <item 
+        android:id="@+id/menu_more" 
+        afba:showAsAction="always" 
+        android:icon="@drawable/ic_menu_moreoverflow_normal_holo_light" android:title="More">
+        <menu>
+            <item 
+                android:id="@+id/menu_compatList" 
+                afba:showAsAction="ifRoom|withText" 
+                android:title="CompatList">
+            </item>
+			<item 
+			    android:id="@+id/menu_filter_years" 
+			    android:title="Years" 
+			    afba:showAsAction="ifRoom|withText">
+			</item>
+    		<item 
+    		    android:id="@+id/menu_filter_systems" 
+    		    android:title="Systems" 
+    		    afba:showAsAction="ifRoom|withText">
+    		</item>
+    		<item 
+    		    android:id="@+id/menu_download_previews" 
+    		    android:title="Previews" 
+    		   	afba:showAsAction="never">
+    		</item>
+    		<item 
+    		    android:id="@+id/menu_donate"
+    		    android:title="Donate">
+    		</item>
+    		<item 
+    		    android:id="@+id/menu_quit" 
+    		    android:title="Quit">
+    		</item>
+    		 
+        </menu>
+    </item>
+</menu>
